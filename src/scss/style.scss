@@ -1,6 +1,14 @@
-body{
-    margin: 0;
-    span {
-        margin: 700px;
-    }
+@import "base/nullable";
+* {
+    font-family: 'MuseoSansCyrl';
 }
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+} 
+
+@import "blocks/promo";
+@import "blocks/preference";
+
+@import "media/media";

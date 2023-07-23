@@ -1,0 +1,32 @@
+/* 768px - 992px */
+
+@media (max-width: 991.5px){
+    .container {
+        max-width: 700px;
+    }
+    .promo {
+        .main {
+            align-items: center;
+            &-text {
+                align-items: center;
+                h1 {
+                    font-size: 40px;
+                }
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .preference {
+        &-list {
+            .item {
+                &__description {
+                    max-width: 220px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

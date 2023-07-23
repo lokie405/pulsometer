@@ -8,12 +8,12 @@ export const sass = () => {
             })
         ))
         .pipe(app.plugins.sass({
-            outputStyle: "compressed",
+            outputStyle: "expanded",
         }).on('error', app.plugins.sass.logError))
         .pipe(app.plugins.autoprefixer({
             grid: true,
             overrideBrowserlist: ["last 3 version"],
-            cascade: true
+            cascade: true,
         }))
         .pipe(app.gulp.dest(app.path.dest.sass))
         .pipe(app.plugins.browserSync.stream());

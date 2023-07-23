@@ -9,7 +9,6 @@ global.app = {
     plugins: plugins,
 }
 
-const task = './gulp/tasks';
 import { html } from "./gulp/tasks/html.js";
 import { sass } from "./gulp/tasks/sass.js";
 import { clearDest } from "./gulp/tasks/clearDest.js";

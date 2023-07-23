@@ -1,0 +1,111 @@
+@use "../base/colors";
+@use "../base/mixins";
+
+.promo {
+    max-height: 620px;
+    max-width: 100%;
+    padding: 21px 0 92px 0;
+    background: url('../img/bg/promo.jpg') center (center / cover) no-repeat;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        &__logo {
+            margin-top: 3px;
+            .logo__img {
+                width: 251px;
+                height: 45px;
+            }
+        }
+        &__represent{
+            margin-top: 7px;
+            font-weight: 700;
+            color: #ffffff;
+            .represent__title {
+                display: block;
+                font-size: 12px;
+                text-align: center;
+            }
+            .represent__subtitle {
+                display: block;
+                margin-top: 12px;
+                font-size: 18px;
+                text-align: center;
+            }
+            
+        }
+        &__contacts {
+            .contacts__number {
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+            .contacts__btn {
+                display: block;
+                margin: 8px auto 0 auto;
+                @include mixins.btn();
+            }
+        }
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 91px;
+            h1 {
+                font-size: 42px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+            h2 {
+                margin-top: 17px;
+                font-size: 24px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+        &-list {
+            margin-top: 67px;
+            display: flex;
+            justify-content: flex-end;
+            .list-item {
+                margin-right: 70px;
+                &__img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                &__desc {
+                    margin-top: 20px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #ffffff;
+                }
+            }
+            & :last-child {
+                margin-right: 18px;
+            }
+        }
+        &-consultation {
+            margin-top: 67px;
+            @include mixins.btn(300px, 50px, 16px)
+        }
+        &-catalog {
+            margin-top: 18px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffffff;
+            a {
+                color: #ffffff;
+                text-decoration: underline;
+            }
+        }
+    }
+}

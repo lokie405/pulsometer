@@ -5,7 +5,7 @@ const dest = "./dest";
 export const path = {
     src: {
         html: `${src}/*.html`,
-        sass: `${src}/scss/**/*.{scss,sass}`,
+        sass: `${src}/scss/**/*.{sass,scss}`,
         fonts: `${src}/fonts/**/*.{ttf,woff,woff2}`,
         img: `${src}/img/**/*.{jpg,jpeg,svg,ico,png,webp}`,
     },
@@ -18,8 +18,7 @@ export const path = {
     },
     watch: {
         html: `${src}/*.html`,
-        sass: `${src}/**/*.{sass,scss}`,
-
+        sass: `${src}/scss/**/*.{scss,sass}`
     },
     clearDest: `${dest}/**/*.*`,
     srcFolder: src,

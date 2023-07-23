@@ -1,0 +1,41 @@
+.preference {
+    min-height: 470px;
+    background-color: #f6f6f6;
+    padding: 69px 0 81px 0;
+    &__title {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 65px;
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__img {
+                width: 70px;
+                height: 70px;
+            }
+            &__title {
+                margin-top: 38px;
+                font-size: 18px;
+                font-weight: 700;
+                color: #0d0d0d;
+            }
+            &__description {
+                width: 247px;
+                margin-top: 26px;
+                font-size: 14px;
+                font-weight: 300;
+                color: #0d0d0d;
+                text-align: center;
+            }
+        }
+    }
+}

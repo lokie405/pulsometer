@@ -1,0 +1,11 @@
+@mixin btn ($width: 150px, $height: 30px, $font-size: 12px, $border-radius: 5px, $bc: #c70101, $font-color: #ffffff) {
+    width: $width;
+    height: $height;
+    background-color: $bc;
+    border-radius: $border-radius;
+    font-size: $font-size;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $font-color;
+}
