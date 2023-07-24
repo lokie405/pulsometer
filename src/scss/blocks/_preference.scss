@@ -1,3 +1,5 @@
+@use "../base/colors";
+
 .preference {
     min-height: 470px;
     background-color: #f6f6f6;
@@ -35,6 +37,10 @@
                 font-weight: 300;
                 color: #0d0d0d;
                 text-align: center;
+                a {
+                    text-decoration: underline;
+                    color: colors.$red;
+                }
             }
         }
     }

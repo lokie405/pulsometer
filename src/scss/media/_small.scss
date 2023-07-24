@@ -1,1 +1,103 @@
 /* 350px - 567px */
+@use "../base/mixins";
+
+@media (max-width: 566.5px) {
+    .container {
+        max-width: 340px;
+    }
+
+    .promo {
+        padding-bottom: 65px;
+        .header {
+            
+            flex-wrap: wrap;
+            // justify-content: space-between;
+
+            &__logo {
+                width: 50%;
+                .logo__img {
+                    width: 195px;
+                    height: 37px;
+                }
+            }
+            &__represent {
+                visibility: hidden;
+                // width: 100%;
+                // margin-top: 10px;
+                // .represent__title {
+                //     display: inline-block;
+                //     width: 49%;
+                //     text-align: right;
+                // }
+                // .represent__subtitle {
+                //     display: inline-block;
+                //     width: 49%;
+                //     // text-align: right;
+                // }
+            }
+            &__contacts {
+                width: 50%;
+                .contacts__number {
+                    margin-right: 10px;
+                    text-align: right;
+                    font-size: 13px;
+                }
+                .contacts__btn {
+                    margin-right: 7px;
+                    margin-left: auto;
+                    @include mixins.btn(125px, 22px, 10px);
+                }
+            }
+            & :nth-child(1) {
+                order: 1;
+            }
+            & :nth-child(2) {
+                order: 3;
+            }
+            & :nth-child(3) {
+                order: 2;
+            }
+           
+        }
+        .main {
+            &-text {
+                margin-top: 30px;
+                .main__title {
+                    font-size: 24px;
+                }
+                .main__subtitle {
+                    font-size: 14px;
+                }
+            }
+            &-list {
+                 .list-item {
+                    margin-right: 10px;
+                    &__img {
+
+                    }
+                 }
+            }
+        }
+    }
+
+    .preference {
+        padding: 55px 0 55px 0;
+        &__title {
+            font-size: 23px;
+        }
+
+        &-list {
+            margin-top: 10px;
+            .item {
+                width: 100%;
+                margin: 27px 0 0 0;
+                &__title {
+                    margin-top: 17px;
+                }
+                &__description {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

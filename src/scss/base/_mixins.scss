@@ -1,4 +1,6 @@
-@mixin btn ($width: 150px, $height: 30px, $font-size: 12px, $border-radius: 5px, $bc: #c70101, $font-color: #ffffff) {
+@use "../base/colors";
+
+@mixin btn ($width: 150px, $height: 30px, $font-size: 12px, $border-radius: 5px, $bc: colors.$red, $font-color: #ffffff) {
     width: $width;
     height: $height;
     background-color: $bc;
