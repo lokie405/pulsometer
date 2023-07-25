@@ -1,0 +1,37 @@
+@use "../base/mixins";
+.consultation {
+    background: url("../img/bg/consultation.jpg") center (center / cover) no-repeat;
+    max-height: 680px;
+    padding: 103px 0 92px 0;
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__require {
+        margin-top: 80px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #ffffff;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        &__item {
+            width: 300px;
+            height: 50px;
+            margin-top: 15px;
+            border-radius: 5px;
+            background-color: #fff;
+            padding-left: 20px;
+            }
+        &__submit {
+            margin-top: 20px;
+            @include mixins.btn(300px, 55px, 16px);
+        }
+    }
+}

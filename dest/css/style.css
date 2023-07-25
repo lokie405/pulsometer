@@ -249,6 +249,51 @@ h1, h2, h3, h4, h5, h6 {
   color: #c70101;
 }
 
+.consultation {
+  background: url("../img/bg/consultation.jpg") center center/cover no-repeat;
+  max-height: 680px;
+  padding: 103px 0 92px 0;
+}
+.consultation__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.consultation__require {
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.consultation .form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.consultation .form__item {
+  width: 300px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding-left: 20px;
+}
+.consultation .form__submit {
+  margin-top: 20px;
+  width: 300px;
+  height: 55px;
+  background-color: #c70101;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 /* 992px - 1200px */
 @media (max-width: 1199.5px) {
   .container {
@@ -275,6 +320,31 @@ h1, h2, h3, h4, h5, h6 {
   .preference-list .item__description {
     max-width: 220px;
     font-size: 12px;
+  }
+  .consultation {
+    padding: 85px 0 73px 0;
+  }
+  .consultation__title {
+    font-size: 29px;
+  }
+  .consultation__require {
+    margin-top: 53px;
+    font-size: 17px;
+  }
+  .consultation .form__item {
+    width: 270px;
+    height: 45px;
+  }
+  .consultation .form__submit {
+    width: 270px;
+    height: 45px;
+    background-color: #c70101;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }
 /* 576px - 768px */
@@ -363,10 +433,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 27px;
   }
 }
-/* 350px - 567px */
-@media (max-width: 566.5px) {
+/* 350px - 576px */
+@media (max-width: 576.5px) {
   .container {
-    max-width: 340px;
+    max-width: 90%;
+    min-width: 340px;
   }
   .promo {
     padding-bottom: 65px;
@@ -444,5 +515,34 @@ h1, h2, h3, h4, h5, h6 {
   }
   .preference-list .item__description {
     margin-top: 20px;
+  }
+  .consultation {
+    padding: 55px 0 55px 0;
+  }
+  .consultation__title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .consultation__require {
+    font-size: 15px;
+    text-align: center;
+  }
+  .consultation-form {
+    align-items: center;
+  }
+  .consultation-form .form__item {
+    width: 240px;
+    height: 40px;
+  }
+  .consultation-form .form__submit {
+    width: 240px;
+    height: 40px;
+    background-color: #c70101;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }
