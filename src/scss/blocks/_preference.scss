@@ -4,14 +4,7 @@
     min-height: 470px;
     background-color: #f6f6f6;
     padding: 69px 0 81px 0;
-    &__title {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 30px;
-        font-weight: 700;
-        color: #0d0d0d;
-    }
+    
     &-list {
         display: flex;
         justify-content: space-between;

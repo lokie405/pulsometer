@@ -1,7 +1,25 @@
 /* 992px - 1200px */
 
 @media (max-width: 1199.5px) {
+
     .container {
-        max-width: 900px;
+        max-width: 940px;
     }
+    .carousel {
+        padding: 60px;
+        &__inner {
+        }
+        &__item {
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    .footer {
+        .footer__map {
+            height: 500px;
+        }
+    }
+
 }

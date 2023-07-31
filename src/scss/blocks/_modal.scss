@@ -1,0 +1,63 @@
+@use "base/colors";
+.overlay {
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    .modal {
+        width: 380px;
+        height: 400px;
+        padding: 38px 40px 40px 40px ;
+        background-color: #f2f2f2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__close {
+            color: colors.$red;
+            font-size: 35px;
+            position: absolute;
+            top: -10px;
+            right: -40px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+    .form {
+        &__title {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+            color: #0d0d0d;
+            text-align: center;
+        }
+        &__require {
+            margin: 11px 0 25px 0;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 500;
+            color: #0d0d0d;
+            text-align: center;
+        }
+    }
+
+    #modal-consultation {
+        display: none;
+
+    }
+    #modal-order {
+        
+    }
+    #modal-thanks {
+        display: none;
+        width: 380px;
+        height: 140px;
+    }
+   
+}
+

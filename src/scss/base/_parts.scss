@@ -1,0 +1,57 @@
+@use "mixins";
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0d0d0d;
+    text-transform: uppercase;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #c70101;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 20px;
+    &__item {
+        width: 300px;
+        height: 50px;
+        margin-top: 15px;
+        border-radius: 5px;
+        background-color: #fff;
+        padding-left: 20px;
+        &:hover {
+            box-shadow: inset 0px 0px 48px -29px #000CFF;
+        }
+    }
+    input:first-of-type {
+        margin-top: 0;
+    }
+    &__submit {
+        margin-top: 20px;
+        @include mixins.btn(300px, 55px, 16px);
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__require {
+        margin: 80px 0 36px 0;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #ffffff;
+    }
+    
+}

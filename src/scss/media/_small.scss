@@ -4,14 +4,13 @@
 @media (max-width: 576.5px) {
     .container {
         max-width: 90%;
-        min-width: 340px;
+        min-width: 330px;
     }
 
     .promo {
         padding-bottom: 65px;
         .header {
             flex-wrap: wrap;
-            // justify-content: space-between;
 
             &__logo {
                 width: 50%;
@@ -22,18 +21,6 @@
             }
             &__represent {
                 visibility: hidden;
-                // width: 100%;
-                // margin-top: 10px;
-                // .represent__title {
-                //     display: inline-block;
-                //     width: 49%;
-                //     text-align: right;
-                // }
-                // .represent__subtitle {
-                //     display: inline-block;
-                //     width: 49%;
-                //     // text-align: right;
-                // }
             }
             &__contacts {
                 width: 50%;
@@ -103,6 +90,17 @@
 
     .consultation {
         padding: 55px 0 55px 0;
+    }
+
+    .form {
+        align-items: center;
+        .form__item {
+            width: 240px;
+            height: 40px;
+        }
+        .form__submit {
+            @include mixins.btn(240px, 40px, 14px);
+        }
         &__title {
             font-size: 22px;
             text-align: center;
@@ -111,14 +109,95 @@
             font-size: 15px;
             text-align: center;
         }
-        &-form {
-            align-items: center;
-            .form__item {
-                width: 240px;
-                height: 40px;
+    }
+
+    .carousel {
+        padding: 10px 0;
+        &__container {
+            min-width: 0;
+            &__inner {
+                max-width: 90%;
             }
-            .form__submit {
-                @include mixins.btn(240px, 40px, 14px);
+            &__item {
+                img {
+                    width: 90%;
+                }
+            }
+            button {
+                display: none;
+                visibility: hidden;
+            }
+            .control-prev {
+            
+            }
+            .control-next {
+    
+            }
+        }
+        
+    }
+
+    .catalog {
+        &-tabs {
+            flex-direction: column;
+            align-items: center;
+            &__item {
+                margin-top: 10px;
+                width: 280px;
+
+            }
+        }
+    }
+
+    .feedback {
+        // padding: 55px 0 55px 0;
+        &-item {
+            &__img {
+                width: 140px;
+                height: 140px;
+            }
+        
+            &__descr {
+                .description {
+                    &__title {
+                    }
+                    &__subtitle {
+                        text-align: center;
+                    }
+                    &__text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &-info {
+            display: flex;
+            position: static;
+            transform: none;
+            min-width: 255px;
+            min-height: 185px;
+            padding: 20px;
+        }
+        .footer {
+            &__addr {
+                font-size: 22px;
+                text-align: center;
+            }
+            &__tel {
+                margin-top: 25px;
+                font-size: 21px;
+            }
+            &__social {
+                margin-top: 25px;
+                &-item {
+                    margin-left: 36px;
+                }
             }
         }
     }
