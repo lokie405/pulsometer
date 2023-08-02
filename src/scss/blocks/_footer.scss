@@ -1,3 +1,4 @@
+@use "../base/colors";
 .footer {
     max-height: 630px;
     position: relative;
@@ -7,7 +8,7 @@
     &-info {
         min-width: 460px;
         min-height: 270px;
-        background-color: #c70101;
+        background-color: colors.$red;
         position: absolute;
         padding: 50px 0 60px 0;
         top: 0;
@@ -63,7 +64,7 @@
                     &:hover {
                         border: 25px solid #ffffff;
                         span {
-                            color: #c70101;
+                            color: colors.$red;
                         }
                     }
 

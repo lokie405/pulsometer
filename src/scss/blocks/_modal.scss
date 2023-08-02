@@ -8,7 +8,7 @@
     display: none;
     .modal {
         width: 380px;
-        height: 400px;
+        min-height: 400px;
         padding: 38px 40px 40px 40px ;
         background-color: #f2f2f2;
         position: absolute;
@@ -39,11 +39,34 @@
         &__require {
             margin: 11px 0 25px 0;
             font-size: 14px;
-            line-height: 1.2;
             font-weight: 500;
             color: #0d0d0d;
             text-align: center;
         }
+
+        label {
+            margin-top: 15px;
+            font-size: 13px;
+            text-align: center;
+            color: grey;
+            &.error {
+                color: colors.$red;
+            }
+            &.valid_green-message{
+               color: colors.$green;
+           }
+
+        }
+        
+        .form__item{
+            &.error {
+                border: 2px solid colors.$red;
+            }
+            &.valid {
+                border: 2px solid colors.$green;
+            }
+        }
+        
     }
 
     #modal-consultation {
@@ -51,7 +74,7 @@
 
     }
     #modal-order {
-        
+        display: none;
     }
     #modal-thanks {
         display: none;

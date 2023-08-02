@@ -12,7 +12,7 @@
     color: $font-color;
     transition: all 0.5s;
     &:hover {
-        box-shadow: 0px 0px 10px 5px colors.$red;
+        box-shadow: 5px 5px 10px 5px colors.$red;
         background-color: #ffffff;
         color: colors.$red;
         text-shadow: 5px 5px 6px colors.$black, -5px -5px 6px colors.$black, -5px 5px 6px colors.$black, 5px -5px 6px colors.$black;

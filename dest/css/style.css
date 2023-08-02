@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px;
 }
 .form__item:hover {
-  box-shadow: inset 0px 0px 48px -29px #000CFF;
+  background-color: #a2caf2;
 }
 .form input:first-of-type {
   margin-top: 0;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 .form__submit:hover {
-  box-shadow: 0px 0px 10px 5px #c70101;
+  box-shadow: 5px 5px 10px 5px #c70101;
   background-color: #ffffff;
   color: #c70101;
   text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 .promo .header__contacts .contacts__btn:hover {
-  box-shadow: 0px 0px 10px 5px #c70101;
+  box-shadow: 5px 5px 10px 5px #c70101;
   background-color: #ffffff;
   color: #c70101;
   text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 .promo .main-consultation:hover {
-  box-shadow: 0px 0px 10px 5px #c70101;
+  box-shadow: 5px 5px 10px 5px #c70101;
   background-color: #ffffff;
   color: #c70101;
   text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -526,7 +526,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
 }
 .catalog-content__btn-buy:hover {
-  box-shadow: 0px 0px 10px 5px #c70101;
+  box-shadow: 5px 5px 10px 5px #c70101;
   background-color: #ffffff;
   color: #c70101;
   text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -657,7 +657,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .overlay .modal {
   width: 380px;
-  height: 400px;
+  min-height: 400px;
   padding: 38px 40px 40px 40px;
   background-color: #f2f2f2;
   position: absolute;
@@ -687,12 +687,32 @@ h1, h2, h3, h4, h5, h6 {
 .overlay .form__require {
   margin: 11px 0 25px 0;
   font-size: 14px;
-  line-height: 1.2;
   font-weight: 500;
   color: #0d0d0d;
   text-align: center;
 }
+.overlay .form label {
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: center;
+  color: grey;
+}
+.overlay .form label.error {
+  color: #c70101;
+}
+.overlay .form label.valid_green-message {
+  color: #2E7D32;
+}
+.overlay .form .form__item.error {
+  border: 2px solid #c70101;
+}
+.overlay .form .form__item.valid {
+  border: 2px solid #2E7D32;
+}
 .overlay #modal-consultation {
+  display: none;
+}
+.overlay #modal-order {
   display: none;
 }
 .overlay #modal-thanks {
@@ -761,7 +781,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
   }
   .form__submit:hover {
-    box-shadow: 0px 0px 10px 5px #c70101;
+    box-shadow: 5px 5px 10px 5px #c70101;
     background-color: #ffffff;
     color: #c70101;
     text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -828,7 +848,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
   }
   .promo .header .contacts__btn:hover {
-    box-shadow: 0px 0px 10px 5px #c70101;
+    box-shadow: 5px 5px 10px 5px #c70101;
     background-color: #ffffff;
     color: #c70101;
     text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -862,7 +882,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
   }
   .promo .main-consultation:hover {
-    box-shadow: 0px 0px 10px 5px #c70101;
+    box-shadow: 5px 5px 10px 5px #c70101;
     background-color: #ffffff;
     color: #c70101;
     text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -999,7 +1019,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
   }
   .promo .header__contacts .contacts__btn:hover {
-    box-shadow: 0px 0px 10px 5px #c70101;
+    box-shadow: 5px 5px 10px 5px #c70101;
     background-color: #ffffff;
     color: #c70101;
     text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;
@@ -1067,7 +1087,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
   }
   .form .form__submit:hover {
-    box-shadow: 0px 0px 10px 5px #c70101;
+    box-shadow: 5px 5px 10px 5px #c70101;
     background-color: #ffffff;
     color: #c70101;
     text-shadow: 5px 5px 6px #e78f8f, -5px -5px 6px #e78f8f, -5px 5px 6px #e78f8f, 5px -5px 6px #e78f8f;

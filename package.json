@@ -19,5 +19,8 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.63.6",
     "tiny-slider": "^2.9.4"
+  },
+  "dependencies": {
+    "jquery-validation": "^1.19.5"
   }
 }

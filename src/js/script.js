@@ -1,3 +1,4 @@
+// $(document).ready(function () {
 
 const carouselPrev = document.querySelector('.control-prev'),
     carouselNext = document.querySelector('.control-next');
@@ -31,32 +32,20 @@ function carouselInner() {
     });
 }
 
-
-
-// function showDetail() {
-//     const link = document.querySelectorAll('.link');
-
-//     link.forEach((element, index) => element.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     const main = element.parentElement.parentElement.children[0];
-//     const detail = element.parentElement.parentElement.children[1];
-//     main.classList.toggle('catalog-content__active');
-//     detail.classList.toggle('catalog-content__active');
-//     }));
-// }
-
     (function($) {
+
+        // $("#modal-consultation", "#modal-order", ".overlay").fadeOut();
 
         $(".consultation-btn").each(function(i) {
             $(this).on('click', function () {
                 $(".overlay, #modal-consultation").fadeIn('slow');
             });
         })
+
         $(".catalog-content__btn-buy").each(function (i) {
             $(this).on('click', function () {
                 $(".overlay, #modal-order").fadeIn('slow');
-                // console.log("ser", $(".catalog-content__title").eq(i).text());
-                $(".form__require").text($(".catalog-content__title").eq(i).text());
+                $("#modal-order .form__require").text($(".catalog-content__title").eq(i).text());
                 
             })
         })
@@ -88,8 +77,57 @@ function carouselInner() {
             
         });
         
+
+
+    $.validator.addMethod("phoneTest", function(value, element) {
+    return console.log(this.optional(element));
+}, 'serrrrrr');
+function checkValid(form) {
+    $(form).validate({
+        phoneTest: true,
+        rules: {
+            name: {
+                required: true,
+            },
+            phone: {
+                required: true,
+                minlength: 12,
+            },
+            email: {
+              required: true,
+              email: true
+            }
+          },
+        success: function(label){
+            label.addClass('valid_green-message').addClass('valid').text('Ok');
+          },
+        messages: {
+            name: {
+                required: "Не введено ім'я",
+            },
+            phone: {
+                required: "Номер телефону - обов'язковий",
+                number: true,
+            },
+            email: {
+                required: "Потрібно ввести email",
+                email: "Некоректна електронна адресса"
+            }
+        }  
+      });
+}
+
+
+checkValid('#form-consultation');
+checkValid('#form-order');
         
-        })(jQuery);
+$('input[name=phone]').mask('+38(099) 999 99-99', {autoClear: true});
+        
+
+
+})(jQuery);
 
 
         carouselInner();
+
+    

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
     <!-- <link rel="stylesheet" href="css/style-icon-font.css"> -->
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/d0733ae041/UntitledProject/style.css">
+    <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/d0733ae041/UntitledProject/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="css/icon_fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Run</title>
 </head>
@@ -23,7 +24,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+34999228974" class="contacts__number">+3 (499) 922-89-74</a>
-                    <button class=" consultation-btn contacts__btn">заказать звонок</button>
+                    <button class="consultation-btn contacts__btn">заказать звонок</button>
                 </div>
             </header>
             <div class="main">
@@ -45,7 +46,7 @@
                         <div class="list-item__desc">Ответим<br>на все вопросы</div>
                     </li>
                 </ul>
-                <button class=" consultation-btn main-consultation">заказать кОНСУЛЬТАЦИЮ</button>
+                <button class="consultation-btn main-consultation">заказать кОНСУЛЬТАЦИЮ</button>
                 <div class="main-catalog">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></div>
             </div>
         </div>
@@ -79,9 +80,9 @@
             <form action="#" class="form consultation-form ">
                 <h2 class="form__title">Получите бесплатную консультацию<br> по подбору пульсометра</h2>
                 <div class="form__require">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут</div>
-                <input type="text" placeholder="Ваше имя" name="name" class="form__item form__name">
-                <input type="number" placeholder="Ваш телефон" name="name" class="form__item form__tel">
-                <input type="email" placeholder="Ваш E-mail" name="name" class="form__item form__email">
+                <input type="text" required minlength="5" placeholder="Ваше имя" name="name" class="form__item form__name">
+                <input required placeholder="Ваш телефон" name="phone" class="form__item form__tel">
+                <input type="email" required placeholder="Ваш E-mail" name="email" class="form__item form__email">
                 <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -491,7 +492,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -503,40 +503,38 @@
             <address class="footer__addr">м. Рівне вул. Відінська 41</address>
             <a href="+380979797979" class="footer__tel">+38(097) 979 79 79</a>
             <div class="footer__social">
-                <!-- <a href="#" class="footer__social-item"><img src="img/icon/facebook.png" alt="facebook"></a> -->
                 <a href="#" class="footer__social-item"><span class="icon-facebook-boxed-svgrepo-com"></span></a>
-                <!-- <a href="#" class="footer__social-item"><img src="img/icon/instagram.png" alt="instagrram"></a> -->
                 <a href="#" class="footer__social-item"><span class="icon-instagram-glyph-logo-svgrepo-com"></span></a>
-                <!-- <a href="#" class="footer__social-item"><img src="img/icon/pinterest.png" alt="pinterest"></a> -->
                 <a href="#" class="footer__social-item"><span class="icon-pinterest-social-logo-svgrepo-com"></span></a>
             </div>
         </div>
     </footer>
-
+    
     <div class="overlay">
-        <div class="modal" id="modal-consultation">
+        <div class="modal" id="modal-consultation" >
             <div class="modal__close">&times;</div>
-            <form action="#" class="form consultation-form ">
+            <form action="#"id="form-consultation" class="form consultation-form ">
                 <h2 class="form__title">Просто заполните форму заявки</h2>
                 <div class="form__require">и мы перезвоним вам в течении 10 минут</div>
                 <input type="text" placeholder="Ваше имя" name="name" class="form__item form__name">
-                <input type="number" placeholder="Ваш телефон" name="name" class="form__item form__tel">
-                <input type="email" placeholder="Ваш E-mail" name="name" class="form__item form__email">
+                <input placeholder="Ваш телефон" name="phone" class="form__item form__tel">
+                <input type="email" placeholder="Ваш E-mail" name="email" class="form__item form__email">
                 <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
 
-        <div class="modal" id="modal-order">
+        <div class="modal" id="modal-order" >
             <div class="modal__close">&times;</div>
-            <form action="#" class="form consultation-form ">
+            <form action="#" id="form-order" class="form consultation-form ">
                 <h2 class="form__title">Ваш заказ:</h2>
                 <div class="form__require" id="model-name-order">Пульсометр Polar FT1</div>
-                <input type="text" placeholder="Ваше имя" name="name" class="form__item form__name">
-                <input type="number" placeholder="Ваш телефон" name="name" class="form__item form__tel">
-                <input type="email" placeholder="Ваш E-mail" name="name" class="form__item form__email">
+                <input type="text" required placeholder="Ваше имя" name="name" class="form__item form__name">
+                <input required placeholder="Ваш телефон" name="phone" class="form__item form__tel">
+                <input type="email" required placeholder="Ваш E-mail" name="email" class="form__item form__email">
                 <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
-        </div>
+        
+    </div>
 
         <div class="modal" id="modal-thanks">
             <div class="modal__close">&times;</div>
@@ -547,6 +545,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
