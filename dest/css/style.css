@@ -101,6 +101,8 @@ h1, h2, h3, h4, h5, h6 {
 .form {
   display: flex;
   flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .form__item {
   width: 300px;
@@ -326,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .consultation {
   background: url("../img/bg/consultation.jpg") center center/cover no-repeat;
-  max-height: 680px;
+  min-height: 680px;
   padding: 103px 0 92px 0;
 }
 
@@ -691,31 +693,35 @@ h1, h2, h3, h4, h5, h6 {
   color: #0d0d0d;
   text-align: center;
 }
-.overlay .form label {
+
+.form label {
   margin-top: 15px;
   font-size: 13px;
   text-align: center;
   color: grey;
 }
-.overlay .form label.error {
+.form label.error {
   color: #c70101;
 }
-.overlay .form label.valid_green-message {
+.form label.valid_green-message {
   color: #2E7D32;
 }
-.overlay .form .form__item.error {
+.form .form__item.error {
   border: 2px solid #c70101;
 }
-.overlay .form .form__item.valid {
+.form .form__item.valid {
   border: 2px solid #2E7D32;
 }
-.overlay #modal-consultation {
+
+#modal-consultation {
   display: none;
 }
-.overlay #modal-order {
+
+#modal-order {
   display: none;
 }
-.overlay #modal-thanks {
+
+#modal-thanks {
   display: none;
   width: 380px;
   height: 140px;

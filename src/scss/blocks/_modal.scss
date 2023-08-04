@@ -43,44 +43,47 @@
             color: #0d0d0d;
             text-align: center;
         }
-
-        label {
-            margin-top: 15px;
-            font-size: 13px;
-            text-align: center;
-            color: grey;
-            &.error {
-                color: colors.$red;
-            }
-            &.valid_green-message{
-               color: colors.$green;
-           }
-
-        }
-        
-        .form__item{
-            &.error {
-                border: 2px solid colors.$red;
-            }
-            &.valid {
-                border: 2px solid colors.$green;
-            }
-        }
-        
-    }
-
-    #modal-consultation {
-        display: none;
-
-    }
-    #modal-order {
-        display: none;
-    }
-    #modal-thanks {
-        display: none;
-        width: 380px;
-        height: 140px;
     }
    
 }
 
+.form {
+    
+
+    label {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+        color: grey;
+        &.error {
+            color: colors.$red;
+        }
+        &.valid_green-message{
+           color: colors.$green;
+       }
+
+    }
+    
+    .form__item{
+        &.error {
+            border: 2px solid colors.$red;
+        }
+        &.valid {
+            border: 2px solid colors.$green;
+        }
+    }
+    
+}
+
+#modal-consultation {
+    display: none;
+
+}
+#modal-order {
+    display: none;
+}
+#modal-thanks {
+    display: none;
+    width: 380px;
+    height: 140px;
+}
