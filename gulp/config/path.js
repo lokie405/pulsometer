@@ -8,7 +8,7 @@ export const path = {
         sass: `${src}/scss/**/*.{sass,scss}`,
         css: `${src}/css/**/*.css`,
         js: `${src}/js/**/*.js`,
-        fonts: `${src}/fonts/**/*.{ttf,woff,woff2}`,
+        fonts: `${src}/fonts/**/*.{ttf,woff,woff2,svg,eot}`,
         img: `${src}/img/**/*.{jpg,jpeg,svg,ico,png,webp}`,
     },
     dest: {

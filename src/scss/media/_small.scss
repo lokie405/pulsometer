@@ -15,7 +15,7 @@
             &__logo {
                 width: 50%;
                 .logo__img {
-                    width: 195px;
+                    width: 190px;
                     height: 37px;
                 }
             }
@@ -94,6 +94,7 @@
 
     .form {
         align-items: center;
+        width: 100%;
         .form__item {
             width: 240px;
             height: 40px;
@@ -199,6 +200,24 @@
                     margin-left: 36px;
                 }
             }
+        }
+    }
+
+    .overlay {
+        .modal {
+            &__close {
+                top: 10px;
+                right: 40px;
+            }
+        }
+
+    }
+
+    a.pageup {
+        right: 5px;
+        bottom: 10px;
+        span {
+            font-size: 33px;
         }
     }
 }

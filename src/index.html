@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/fonts.css">
-    <!-- <link rel="stylesheet" href="css/style-icon-font.css"> -->
-    <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/d0733ae041/UntitledProject/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/fonts.css"> -->
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
-    <link rel="stylesheet" href="css/icon_fonts.css">
+    <!-- <link rel="stylesheet" href="css/icon_fonts.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Run</title>
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="promo-part">
         <div class="container">
             <header class="header">
                 <div class="header__logo">
@@ -47,27 +46,27 @@
                     </li>
                 </ul>
                 <button class="consultation-btn main-consultation">заказать кОНСУЛЬТАЦИЮ</button>
-                <div class="main-catalog">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></div>
+                <div class="main-catalog">или <a href="#catalog-part" class="link-catalog">ПЕРЕЙТИ В КАТАЛОГ</a></div>
             </div>
         </div>
     </section>
 
-    <section class="preference">
+    <section class="preference" id="preference-part">
         <div class="container">
             <div class="preference__title title">НАШИ ПРЕИМУЩЕСТВА</div>
             <ul class="preference-list">
                 <li class="item">
-                    <img src="./img/icon/cup.png" alt="cup" class="item__img">
+                    <img src="./img/icon/cup.png" alt="cup" class="item__img item__img-cup">
                     <h3 class="item__title">Делимся опытом</h3>
                     <div class="item__description">Наши сотрудники всегда готовы поделиться своим опытом,<br> так как сами бегают полумарафоны,<br> переплыли Босфор, готовятся к<br> соревнованиям по триатлону!</div>
                 </li>
                 <li class="item">
-                    <img src="./img/icon/heart.png" alt="heart" class="item__img">
+                    <img src="./img/icon/heart.png" alt="heart" class="item__img item__img-heart">
                     <h3 class="item__title">Заботимся о здоровье</h3>
                     <div class="item__description">Мы работаем для того,<br> чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </li>
                 <li class="item">
-                    <img src="./img/icon/shoe.png" alt="shoe" class="item__img">
+                    <img src="./img/icon/shoe.png" alt="shoe" class="item__img item__img-shoe">
                     <h3 class="item__title">Учим бегать</h3>
                     <div class="item__description">Помогаем с обучением<br> правильной технике бега!<br> Дружим с крупнейшей школой бега в Ukraine - <a href="#">I LOVE RUNNING</a>.</div>
                 </li>
@@ -75,20 +74,30 @@
         </div>
     </section>
 
-    <section class="consultation">
+    <section class="consultation" id="consultation-part">
         <div class="container">
             <h2 class="form__title">Получите бесплатную консультацию<br> по подбору пульсометра</h2>
             <div class="form__require">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут</div>
-            <form action="#" class="form consultation-form "id="form-consultation_static">
-                <input type="text" placeholder="Ваше имя" name="name" class="form__item form__name">
-                <input required placeholder="Ваш телефон" name="phone" class="form__item form__tel">
-                <input type="email" required placeholder="Ваш E-mail" name="email" class="form__item form__email">
-                <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
+            <form action="#" class="form consultation-form " id="form-consultation_static">
+                <div class="input-wrapper">
+                    <input name="name" type="text" placeholder="Ваше имя" class="form__item form__name">
+                    <div class="clear-input">&times</div>
+                </div>
+                <div class="input-wrapper">
+                    <input name="phone" placeholder="Ваш телефон" class="form__item form__tel">
+                    <div class="clear-input">&times</div>
+                </div>
+                <div class="input-wrapper">
+                    <input name="email" type="email" placeholder="Ваш E-mail" class="form__item form__email">
+                    <div class="clear-input">&times</div>
+                </div>
+                
+                <button type="submit" class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
 
-    <section class="carousel">
+    <section class="carousel" id="carousel-part">
         <div class="container carousel__container">
             <div class="carousel__inner ">
                 <div class="carousel__item">
@@ -101,12 +110,12 @@
                     <img src="img/picture/polar-rc3gps-double.jpg" alt="">
                 </div>
             </div>
-            <button type="button" class="control-prev"><img src="./img/icon/left-arrow.png"></button>
-            <button type="button" class="control-next"><img src="./img/icon/right-arrow.png"></button>
+            <button type="button" class="control-prev"><img src="./img/icon/left-arrow.png" alt=""></button>
+            <button type="button" class="control-next"><img src="./img/icon/right-arrow.png" alt=""></button>
         </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog" id="catalog-part">
         <div class="container">
 
             <h2 class="catalog__title title">Каталог пульсометров</h2>
@@ -121,7 +130,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Polar FT1</h3>
                             <div class="catalog-content__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -149,10 +158,10 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Suunto M2</h3>
                             <div class="catalog-content__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
-                            <a href=#" class="link catalog-content__link-detail">ПОДРОБНЕЕ</a>
+                            <a href="#" class="link catalog-content__link-detail">ПОДРОБНЕЕ</a>
                         </div>
                         <div class="catalog-content__container catalog-content__detail ">
                             <ul class="detail__list">
@@ -177,7 +186,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Suunto M2</h3>
                             <div class="catalog-content__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -205,7 +214,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Polar FT1</h3>
                             <div class="catalog-content__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -233,7 +242,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Suunto M2</h3>
                             <div class="catalog-content__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -261,7 +270,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Polar FT4</h3>
                             <div class="catalog-content__descr">Улучшенная версия Polar FT1, имеющая следующие улучшения:</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -292,7 +301,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Suunto M2</h3>
                             <div class="catalog-content__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -320,7 +329,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Polar FT4</h3>
                             <div class="catalog-content__descr">Улучшенная версия Polar FT1, имеющая следующие улучшения:</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -349,7 +358,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Suunto M2</h3>
                             <div class="catalog-content__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -377,7 +386,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Polar FT1</h3>
                             <div class="catalog-content__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="#" class="link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -405,7 +414,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Suunto M2</h3>
                             <div class="catalog-content__descr">Пульсометр начального уровня с комфортным тканевым ремешком</div>
                             <a href="#" class="link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -433,7 +442,7 @@
                 <div class="catalog-content">
                     <div class="catalog-content__wrapper">
                         <div class="catalog-content__container catalog-content__main catalog-content__main_active">
-                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg"></img>
+                            <img class="catalog-content__img" src="./img/picture/placeholder_pulsometer.jpg" alt="">
                             <h3 class="catalog-content__title">Пульсометр Polar FT4</h3>
                             <div class="catalog-content__descr">Улучшенная версия Polar FT1, имеющая следующие улучшения:</div>
                             <a href="#" class=" link catalog-content__link-detail">ПОДРОБНЕЕ</a>
@@ -462,12 +471,12 @@
         </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback-part">
         <div class="container">
             <div class="feedback__title title">отзывы клиентов</div>
             <div class="feedback-list">
                 
-                <div class="feedback-item after-none">
+                <div class="feedback-item after-none wow animate__animated animate__fadeInRight">
                     <img src="img/picture/avatar_1.jpg" alt="" class="feedback-item__img">
                     <div class="feedback-item__descr">
                         <h4 class="description__title">Ирина Иванченко</h4>
@@ -475,7 +484,7 @@
                         <p class="description__text">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.<br> Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.<br><br>Новые цели - новый гаджет!<br><br>Спасибо, RunSmart!</p>
                     </div>
                 </div>
-                <div class="feedback-item">
+                <div class="feedback-item wow animate__animated animate__fadeInRight">
                     <img src="img/picture/avatar_2.jpg" alt="" class="feedback-item__img">
                     <div class="feedback-item__descr">
                         <h4 class="description__title">Иван Сёмочкин</h4>
@@ -483,7 +492,7 @@
                         <p class="description__text">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал.<br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</p>
                     </div>
                 </div>
-                <div class="feedback-item">
+                <div class="feedback-item wow animate__animated animate__fadeInRight">
                     <img src="img/picture/avatar_3.jpg" alt="" class="feedback-item__img">
                     <div class="feedback-item__descr">
                         <h4 class="description__title">Юлия Дашкина</h4>
@@ -495,7 +504,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer-part" >
         <div class="footer__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.1459655429235!2d26.269003227353092!3d50.605825188429606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f136bbdfb077b%3A0xa331c189d3c75f5a!2z0KjRgtGD0YDQvA!5e0!3m2!1sru!2sua!4v1690738240913!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="none" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -513,12 +522,12 @@
     <div class="overlay">
         <div class="modal" id="modal-consultation" >
             <div class="modal__close">&times;</div>
-            <form action="#"id="form-consultation" class="form consultation-form ">
+            <form action="#" id="form-consultation" class="form consultation-form ">
                 <h2 class="form__title">Просто заполните форму заявки</h2>
                 <div class="form__require">и мы перезвоним вам в течении 10 минут</div>
-                <input type="text" placeholder="Ваше имя" name="name" class="form__item form__name">
-                <input placeholder="Ваш телефон" name="phone" class="form__item form__tel">
-                <input type="email" placeholder="Ваш E-mail" name="email" class="form__item form__email">
+                <input name="name" type="text" placeholder="Ваше имя" class="form__item form__name">
+                <input name="phone" placeholder="Ваш телефон" class="form__item form__tel">
+                <input name="email" type="email" placeholder="Ваш E-mail" class="form__item form__email">
                 <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -528,9 +537,9 @@
             <form action="#" id="form-order" class="form consultation-form ">
                 <h2 class="form__title">Ваш заказ:</h2>
                 <div class="form__require" id="model-name-order">Пульсометр Polar FT1</div>
-                <input type="text" required placeholder="Ваше имя" name="name" class="form__item form__name">
-                <input required placeholder="Ваш телефон" name="phone" class="form__item form__tel">
-                <input type="email" required placeholder="Ваш E-mail" name="email" class="form__item form__email">
+                <input name="name" type="text" required placeholder="Ваше имя" class="form__item form__name">
+                <input name="phone" required placeholder="Ваш телефон" class="form__item form__tel">
+                <input name="email" type="email" required placeholder="Ваш E-mail" class="form__item form__email">
                 <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         
@@ -543,10 +552,13 @@
         </div>
     </div>
 
+    <a href="#promo-part" class="pageup animate__animate"><span class="icon-circle-up-solid"></span></a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

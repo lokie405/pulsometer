@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?yi9i');
-  src:  url('../fonts/icomoon.eot?yi9i#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?yi9i') format('truetype'),
-    url('../fonts/icomoon.woff?yi9i') format('woff'),
-    url('../fonts/icomoon.svg?yi9i#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?vn1vqj');
+  src:  url('../fonts/icomoon.eot?vn1vqj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vn1vqj') format('truetype'),
+    url('../fonts/icomoon.woff?vn1vqj') format('woff'),
+    url('../fonts/icomoon.svg?vn1vqj#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-circle-up-solid:before {
+  content: "\e909";
+}
 .icon-pinterest-social-logo-svgrepo-com:before {
   content: "\e906";
 }

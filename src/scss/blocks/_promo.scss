@@ -44,6 +44,7 @@
                 display: block;
                 margin: 8px auto 0 auto;
                 @include mixins.btn();
+                
             }
         }
     }
@@ -79,6 +80,7 @@
                 &__img {
                     display: block;
                     margin: 0 auto;
+                    
                 }
                 &__desc {
                     margin-top: 20px;

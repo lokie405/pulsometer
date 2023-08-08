@@ -74,6 +74,15 @@
     }
     
 }
+.consultation {
+    .form {
+        .clear-input {
+            position: absolute;
+            color: colors.$red;
+            left: 10px
+        }
+    }
+}
 
 #modal-consultation {
     display: none;

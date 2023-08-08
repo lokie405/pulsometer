@@ -1,0 +1,28 @@
+@use "colors";
+.after-none {
+    &::after {
+        content: none;
+    }
+}
+
+.pageup {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: none;
+    color: colors.$red;
+    span {
+        font-size: 45px;
+    }
+    &_visible {
+        display: block;
+    }
+    // &:hover {
+        
+        
+    //     span {
+    //     }
+    // }
+}

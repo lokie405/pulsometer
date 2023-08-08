@@ -16,6 +16,26 @@
             &__img {
                 width: 70px;
                 height: 70px;
+                &-heart {
+                    animation: heartbeat;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                }
+                &-shoe {
+                    animation: run;
+                    animation-duration: 2.5s;
+                    animation-iteration-count: infinite;
+                    // animation-timing-function:cubic-bezier(1, 0, 0, 1)
+                    // animation-timing-function: erace-out;
+                }
+                &-cup {
+                    animation: cup-shake;
+                    animation-duration: 1.5s;
+                    animation-iteration-count: infinite;
+                }
+                &:hover {
+                    animation-play-state: paused;
+                }
             }
             &__title {
                 margin-top: 38px;

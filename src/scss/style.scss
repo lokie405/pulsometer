@@ -1,3 +1,7 @@
+@import "libs/fonts";
+@import "libs/animate";
+@import "libs/slick";
+@import "libs/icon_fonts";
 @import "base/nullable";
 * {
     font-family: 'MuseoSansCyrl';
@@ -19,5 +23,6 @@
 @import "blocks/modal";
 
 
-@import "base/correction";
+@import "base/utility";
 @import "media/media";
+@import "base/animation";
