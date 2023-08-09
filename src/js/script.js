@@ -56,10 +56,30 @@ const carouselPrev = document.querySelector('.control-prev'),
     function closeModal() {
         $(".overlay, #modal-consultation, #modal-order, #modal-thanks").fadeOut('slow');
         $('input').val('');
+        // if($('input').hasClass('valid')) {
+            
+        // }
+        // if($('input').hasClass('error')) {
+            
+        // }
         $('input').removeClass('valid');
         $('input').removeClass('error');
-        $('label').fadeOut();
+        // $('input').fadeOut();
     }
+
+    // function clearInput(input) {
+    $('.clear-input').on('click', function(e, i) {
+
+        
+        const input = $(this).siblings('input');
+        console.log('input: ', input);
+        $(input).val('');
+        $(input).removeClass('valid');
+        $(input).removeClass('error');
+        $(this).siblings('label').fadeOut();
+        // $(input).fadeOut();
+    })
+    // }
 
     $(".modal__close").on('click', function() {
         closeModal();
@@ -97,7 +117,7 @@ const carouselPrev = document.querySelector('.control-prev'),
     });
         
 
-    // Validator task
+    // Validator rules
     
     $.validator.addMethod("nameTest", function(value, element) {
         return this.optional(element) || /^\S{2}/gms.test(value);
@@ -111,6 +131,7 @@ const carouselPrev = document.querySelector('.control-prev'),
 
     function checkValid(form) {
         $(form).validate({
+            onfocusout: false,
             rules: {
                 name: {
                     required: true,

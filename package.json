@@ -1,26 +1,19 @@
 {
-  "name": "pulsometer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "jquery-validation": "^1.19.5"
   },
-  "author": "seryogaDev",
-  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
     "sass": "^1.63.6",
     "tiny-slider": "^2.9.4"
-  },
-  "dependencies": {
-    "jquery-validation": "^1.19.5"
   }
 }

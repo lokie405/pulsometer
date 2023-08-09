@@ -22,20 +22,46 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
+    .input-wrapper {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 15px;
+
+        .clear-input {
+            color: colors.$grey;
+            position: absolute;
+            right: 10px;
+            top: 16px;
+            &:hover {
+                cursor: pointer;
+                color: red;
+            }
+        }
+    }
     &__item {
         width: 300px;
         height: 50px;
-        margin-top: 15px;
         border-radius: 5px;
         background-color: #fff;
         padding-left: 20px;
+        &.error {
+            border: 2px solid colors.$red;
+            box-shadow: inset 0px 0px 10px 2px rgba(199,76,65,0.42)
+
+        }
+        &.valid {
+            border: 2px solid colors.$green;
+            box-shadow: inset 0px 0px 10px 2px rgba(46,125,50,0.42)
+
+        }
         &:hover {
-            // box-shadow: inset 0px 0px 1px 2px colors.$blue;
             background-color: colors.$ltblue;
         }
     }
     input:first-of-type {
         margin-top: 0;
+        transition: all 1s;
     }
     &__submit {
         margin-top: 20px;
@@ -55,5 +81,28 @@
         line-height: 1.2;
         color: #ffffff;
     }
-    
+    &__title_overlay {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #0d0d0d;
+        text-align: center;
+    }
+    &__require_overlay {
+        margin: 11px 0 25px 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #0d0d0d;
+        text-align: center;
+    }
+
+    label {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+        color: grey;
+        &.error {
+            color: colors.$red;
+        }
+    }
 }

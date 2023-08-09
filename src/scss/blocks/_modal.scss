@@ -28,60 +28,6 @@
             cursor: pointer;
         }
     }
-    .form {
-        &__title {
-            margin: 0;
-            font-size: 16px;
-            font-weight: 700;
-            color: #0d0d0d;
-            text-align: center;
-        }
-        &__require {
-            margin: 11px 0 25px 0;
-            font-size: 14px;
-            font-weight: 500;
-            color: #0d0d0d;
-            text-align: center;
-        }
-    }
-   
-}
-
-.form {
-    
-
-    label {
-        margin-top: 15px;
-        font-size: 13px;
-        text-align: center;
-        color: grey;
-        &.error {
-            color: colors.$red;
-        }
-        &.valid_green-message{
-           color: colors.$green;
-       }
-
-    }
-    
-    .form__item{
-        &.error {
-            border: 2px solid colors.$red;
-        }
-        &.valid {
-            border: 2px solid colors.$green;
-        }
-    }
-    
-}
-.consultation {
-    .form {
-        .clear-input {
-            position: absolute;
-            color: colors.$red;
-            left: 10px
-        }
-    }
 }
 
 #modal-consultation {

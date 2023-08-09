@@ -523,11 +523,20 @@
         <div class="modal" id="modal-consultation" >
             <div class="modal__close">&times;</div>
             <form action="#" id="form-consultation" class="form consultation-form ">
-                <h2 class="form__title">Просто заполните форму заявки</h2>
-                <div class="form__require">и мы перезвоним вам в течении 10 минут</div>
-                <input name="name" type="text" placeholder="Ваше имя" class="form__item form__name">
-                <input name="phone" placeholder="Ваш телефон" class="form__item form__tel">
-                <input name="email" type="email" placeholder="Ваш E-mail" class="form__item form__email">
+                <h2 class="form__title form__title_overlay">Просто заполните форму заявки</h2>
+                <div class="form__require form__require_overlay">и мы перезвоним вам в течении 10 минут</div>
+                <div class="input-wrapper">
+                    <input name="name" type="text" placeholder="Ваше имя" class="form__item form__name">
+                    <div class="clear-input">&times</div>
+                </div>
+                <div class="input-wrapper">
+                    <input name="phone" placeholder="Ваш телефон" class="form__item form__tel">
+                    <div class="clear-input">&times</div>
+                </div>
+                <div class="input-wrapper">
+                    <input name="email" type="email" placeholder="Ваш E-mail" class="form__item form__email">
+                    <div class="clear-input">&times</div>
+                </div>
                 <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
@@ -535,11 +544,20 @@
         <div class="modal" id="modal-order" >
             <div class="modal__close">&times;</div>
             <form action="#" id="form-order" class="form consultation-form ">
-                <h2 class="form__title">Ваш заказ:</h2>
-                <div class="form__require" id="model-name-order">Пульсометр Polar FT1</div>
-                <input name="name" type="text" required placeholder="Ваше имя" class="form__item form__name">
-                <input name="phone" required placeholder="Ваш телефон" class="form__item form__tel">
-                <input name="email" type="email" required placeholder="Ваш E-mail" class="form__item form__email">
+                <h2 class="form__title form__title_overlay">Ваш заказ:</h2>
+                <div class="form__require form__require_overlay" id="model-name-order">Пульсометр Polar FT1</div>
+                <div class="input-wrapper">
+                    <input name="name" type="text" placeholder="Ваше имя" class="form__item form__name">
+                    <div class="clear-input">&times</div>
+                </div>
+                <div class="input-wrapper">
+                    <input name="phone" placeholder="Ваш телефон" class="form__item form__tel">
+                    <div class="clear-input">&times</div>
+                </div>
+                <div class="input-wrapper">
+                    <input name="email" type="email" placeholder="Ваш E-mail" class="form__item form__email">
+                    <div class="clear-input">&times</div>
+                </div>
                 <button class="form__submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         
