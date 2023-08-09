@@ -12,13 +12,10 @@ const carouselPrev = document.querySelector('.control-prev'),
                     autoHeight: false,
                     "speed": 400,
                     controls: false,
-                    // "center": true,
                 },
                 350: {
-                    // items: 1,
                     autoWidth: true,
                     touch:true,
-                    // mouseDrag: true,
                 }
             }
         });
@@ -56,30 +53,20 @@ const carouselPrev = document.querySelector('.control-prev'),
     function closeModal() {
         $(".overlay, #modal-consultation, #modal-order, #modal-thanks").fadeOut('slow');
         $('input').val('');
-        // if($('input').hasClass('valid')) {
-            
-        // }
-        // if($('input').hasClass('error')) {
-            
-        // }
         $('input').removeClass('valid');
         $('input').removeClass('error');
-        // $('input').fadeOut();
+        $('label').fadeOut();
     }
 
-    // function clearInput(input) {
+    // function clearInput {
     $('.clear-input').on('click', function(e, i) {
-
-        
         const input = $(this).siblings('input');
         console.log('input: ', input);
         $(input).val('');
         $(input).removeClass('valid');
         $(input).removeClass('error');
         $(this).siblings('label').fadeOut();
-        // $(input).fadeOut();
     })
-    // }
 
     $(".modal__close").on('click', function() {
         closeModal();

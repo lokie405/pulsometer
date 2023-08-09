@@ -31,6 +31,9 @@
                 font-size: 18px;
                 text-align: center;
             }
+            .represent__title_singleline {
+                display: none;
+            }
         }
         &__contacts {
             .contacts__number {
@@ -41,6 +44,7 @@
                 transition: all 0.5s;
                 &:hover {
                     color: colors.$blue;
+                    text-shadow: 2px 2px 2px #CECECE;
                 }
             }
             .contacts__btn {
@@ -110,13 +114,12 @@
             a {
                 color: #ffffff;
                 text-decoration: underline;
-                transition: all 1s;
+                transition: all 0.2s;
                 &:hover {
                     text-shadow: 3px 3px 2px #000000;
                     display: inline-block;
-                    margin-left: 10px;
                     width: fit-content;
-                    transform: scale(1.1);
+                    text-decoration: none;
                 }
             }
         }

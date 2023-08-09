@@ -8,7 +8,6 @@ import gulpSass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
 import browserSync from "browser-sync";
 import imagemin from "gulp-imagemin";
-// const browserSync = require("browser-sync").create();
 
 browserSync.create();
 

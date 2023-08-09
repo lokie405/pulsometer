@@ -592,6 +592,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   text-align: center;
 }
+.promo .header__represent .represent__title_singleline {
+  display: none;
+}
 .promo .header__contacts .contacts__number {
   display: block;
   font-size: 18px;
@@ -601,6 +604,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .promo .header__contacts .contacts__number:hover {
   color: #000CFF;
+  text-shadow: 2px 2px 2px #CECECE;
 }
 .promo .header__contacts .contacts__btn {
   display: block;
@@ -697,15 +701,14 @@ h1, h2, h3, h4, h5, h6 {
 .promo .main-catalog a {
   color: #ffffff;
   text-decoration: underline;
-  transition: all 1s;
+  transition: all 0.2s;
 }
 .promo .main-catalog a:hover {
   text-shadow: 3px 3px 2px #000000;
   display: inline-block;
-  margin-left: 10px;
   width: -moz-fit-content;
   width: fit-content;
-  transform: scale(1.1);
+  text-decoration: none;
 }
 
 .preference {
@@ -762,6 +765,11 @@ h1, h2, h3, h4, h5, h6 {
 .preference-list .item__description a {
   text-decoration: underline;
   color: #c70101;
+  transition: all 0.2s;
+}
+.preference-list .item__description a:hover {
+  text-shadow: 1px 1px 2px #000000;
+  text-decoration: none;
 }
 
 .consultation {
@@ -1199,11 +1207,19 @@ h1, h2, h3, h4, h5, h6 {
   .consultation {
     padding: 85px 0 73px 0;
   }
+  .form {
+    margin: 0 auto;
+  }
+  .form_static {
+    margin: 0;
+  }
   .form__item {
     width: 270px;
     height: 45px;
   }
   .form__submit {
+    margin-left: auto;
+    margin-right: auto;
     width: 270px;
     height: 45px;
     background-color: #c70101;
@@ -1227,6 +1243,15 @@ h1, h2, h3, h4, h5, h6 {
   .form__require {
     margin-top: 53px;
     font-size: 17px;
+  }
+  .form .input-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .form .input-wrapper .clear-input {
+    top: 13px;
   }
   .carousel {
     padding: 40px;
@@ -1429,7 +1454,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 37px;
   }
   .promo .header__represent {
+    width: 100%;
+  }
+  .promo .header__represent .represent__title {
     visibility: hidden;
+  }
+  .promo .header__represent .represent__subtitle {
+    visibility: hidden;
+  }
+  .promo .header__represent .represent__title_singleline {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
   }
   .promo .header__contacts {
     width: 50%;
@@ -1491,7 +1528,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .preference-list .item {
     width: 100%;
-    margin: 27px 0 0 0;
+    margin: 35px 0 0 0;
   }
   .preference-list .item__title {
     margin-top: 17px;
